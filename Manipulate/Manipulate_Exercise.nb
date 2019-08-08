@@ -1,0 +1,523 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     20096,        515]
+NotebookOptionsPosition[     19214,        491]
+NotebookOutlinePosition[     19562,        506]
+CellTagsIndexPosition[     19519,        503]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"x", "^", "n"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "5", ",", 
+       RowBox[{"-", "5"}]}], "}"}], ",", 
+     RowBox[{"PlotRange", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "5"}], ",", "5"}], "}"}]}]}], "]"}], 
+   "\[IndentingNewLine]", ",", 
+   RowBox[{"{", 
+    RowBox[{"n", ",", "1", ",", "10"}], "}"}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.7740983641251416`*^9, 3.7740984485315166`*^9}, {
+  3.7740984789225955`*^9, 3.7740985184047813`*^9}, {3.7740985497971787`*^9, 
+  3.7740985894298334`*^9}},ExpressionUUID->"806b6df7-a53d-42ba-b9c1-\
+13c7adb9b6b6"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`n$$ = 1., Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`n$$], 1, 10}}, Typeset`size$$ = {360., {109., 114.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`n$133795$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`n$$ = 1}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`n$$, $CellContext`n$133795$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Plot[{$CellContext`x^$CellContext`n$$}, {$CellContext`x, 5, -5}, 
+        PlotRange -> {-5, 5}], 
+      "Specifications" :> {{$CellContext`n$$, 1, 10}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{411., {155., 162.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.774098434033238*^9, 3.7740984497697463`*^9}, 
+   3.7740984889000416`*^9, 3.7740985189229417`*^9, {3.7740985679770265`*^9, 
+   3.7740985899790864`*^9}},ExpressionUUID->"bc62987e-0721-4595-bc0d-\
+eb58daa84d44"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Graphics", "[", 
+    RowBox[{"{", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"Blue", ",", 
+        RowBox[{"Polygon", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"x", "+", "0"}], ",", "0.2"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"x", "+", "2"}], ",", "0.2"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"x", "+", "2"}], ",", "1.2"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"x", "+", "0"}], ",", "1.2"}], "}"}]}], "}"}], "]"}]}], 
+       "}"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"{", 
+       RowBox[{"Polygon", "[", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"x", "+", ".25"}], ",", "1.2"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"x", "+", "1.5"}], ",", "1.2"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"x", "+", "1.25"}], ",", "2.2"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"x", "+", "0.5"}], ",", "2.2"}], "}"}]}], "}"}], "]"}], 
+       "}"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"{", 
+       RowBox[{"Red", ",", 
+        RowBox[{"Polygon", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"x", "+", "0.35"}], ",", "1.3"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"x", "+", "0.35"}], ",", "1.3"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"x", "+", "0.8"}], ",", "2.1"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"x", "+", "0.55"}], ",", "2.1"}], "}"}]}], "}"}], 
+         "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"{", 
+       RowBox[{"Red", ",", 
+        RowBox[{"Polygon", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"x", "+", "0.9"}], ",", "1.3"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"x", "+", "1.4"}], ",", "1.3"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"x", "+", "1.2"}], ",", "2.1"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"x", "+", "0.9"}], ",", "2.1"}], "}"}]}], "}"}], "]"}]}],
+        "}"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"{", 
+       RowBox[{"Red", ",", " ", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"x", "+", "0.5"}], ",", "0.2"}], "}"}], ",", ".2"}], 
+         "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"{", 
+       RowBox[{"Red", ",", " ", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"x", "+", "1.5"}], ",", "0.2"}], "}"}], ",", ".2"}], 
+         "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"{", 
+       RowBox[{"Line", "[", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"0", ",", "0"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"12", ",", "0"}], "}"}]}], "}"}], "]"}], "}"}]}], 
+     "\[IndentingNewLine]", "}"}], "]"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", "\"\<Position\>\""}], "}"}], ",", "0", ",", 
+     "10"}], "}"}]}], "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.7740988903449564`*^9, 3.774098989212427*^9}, {
+  3.774099026324396*^9, 3.7740990290694065`*^9}, {3.774099067428793*^9, 
+  3.7740991890060005`*^9}, {3.7740992350948505`*^9, 3.774099320738243*^9}, {
+  3.774099360532626*^9, 
+  3.774099597502327*^9}},ExpressionUUID->"13cc9972-4d31-48f3-908f-\
+f4333098f5fd"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`x$$ = 0., Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`x$$], 0, "Position"}, 0, 10}}, Typeset`size$$ = {
+    360., {36., 42.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`x$136515$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`x$$ = 0}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`x$$, $CellContext`x$136515$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Graphics[{{Blue, 
+          
+          Polygon[{{$CellContext`x$$ + 0, 0.2}, {$CellContext`x$$ + 2, 
+             0.2}, {$CellContext`x$$ + 2, 1.2}, {$CellContext`x$$ + 0, 
+             1.2}}]}, {
+          
+          Polygon[{{$CellContext`x$$ + 0.25, 1.2}, {$CellContext`x$$ + 1.5, 
+             1.2}, {$CellContext`x$$ + 1.25, 2.2}, {$CellContext`x$$ + 0.5, 
+             2.2}}]}, {Red, 
+          
+          Polygon[{{$CellContext`x$$ + 0.35, 1.3}, {$CellContext`x$$ + 0.35, 
+             1.3}, {$CellContext`x$$ + 0.8, 2.1}, {$CellContext`x$$ + 0.55, 
+             2.1}}]}, {Red, 
+          
+          Polygon[{{$CellContext`x$$ + 0.9, 1.3}, {$CellContext`x$$ + 1.4, 
+             1.3}, {$CellContext`x$$ + 1.2, 2.1}, {$CellContext`x$$ + 0.9, 
+             2.1}}]}, {Red, 
+          Disk[{$CellContext`x$$ + 0.5, 0.2}, 0.2]}, {Red, 
+          Disk[{$CellContext`x$$ + 1.5, 0.2}, 0.2]}, {
+          Line[{{0, 0}, {12, 0}}]}}], 
+      "Specifications" :> {{{$CellContext`x$$, 0, "Position"}, 0, 10}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{411., {82., 89.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.774099371252758*^9, {3.7740995525979557`*^9, 
+   3.774099598545648*^9}},ExpressionUUID->"f85677ea-c5a2-4d79-9f4b-\
+f37c8628fdff"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Graphics", "[", 
+    RowBox[{"{", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"Body", ",", 
+        RowBox[{"Polygon", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"x", "+", "0"}], ",", "0.2"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"x", "+", "2"}], ",", "0.2"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"x", "+", "2"}], ",", "1.2"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"x", "+", "0"}], ",", "1.2"}], "}"}]}], "}"}], "]"}]}], 
+       "}"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"{", 
+       RowBox[{"Polygon", "[", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"x", "+", ".25"}], ",", "1.2"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"x", "+", "1.5"}], ",", "1.2"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"x", "+", "1.25"}], ",", "2.2"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"x", "+", "0.5"}], ",", "2.2"}], "}"}]}], "}"}], "]"}], 
+       "}"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"{", 
+       RowBox[{"Window", ",", 
+        RowBox[{"Polygon", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"x", "+", "0.35"}], ",", "1.3"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"x", "+", "0.35"}], ",", "1.3"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"x", "+", "0.8"}], ",", "2.1"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"x", "+", "0.55"}], ",", "2.1"}], "}"}]}], "}"}], 
+         "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"{", 
+       RowBox[{"Window", ",", 
+        RowBox[{"Polygon", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"x", "+", "0.9"}], ",", "1.3"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"x", "+", "1.4"}], ",", "1.3"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"x", "+", "1.2"}], ",", "2.1"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"x", "+", "0.9"}], ",", "2.1"}], "}"}]}], "}"}], "]"}]}],
+        "}"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"{", 
+       RowBox[{"Wheel", ",", " ", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"x", "+", "0.5"}], ",", "0.2"}], "}"}], ",", ".2"}], 
+         "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"{", 
+       RowBox[{"Wheel", ",", " ", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"x", "+", "1.5"}], ",", "0.2"}], "}"}], ",", ".2"}], 
+         "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"{", 
+       RowBox[{"Line", "[", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"0", ",", "0"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"12", ",", "0"}], "}"}]}], "}"}], "]"}], "}"}]}], 
+     "\[IndentingNewLine]", "}"}], "]"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", "\"\<Position\>\""}], "}"}], ",", "0", ",", 
+     "10"}], "}"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"Body", ",", "Blue", ",", "\"\<Body\>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"Yellow", ",", "Red", ",", "Green"}], "}"}]}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"Wheel", ",", "Red", ",", "\"\<Wheel\>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"Yellow", ",", "Red", ",", "Green"}], "}"}]}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"Window", ",", "Blue", ",", "\"\<Window\>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"Yellow", ",", "Red", ",", "Green"}], "}"}]}], "}"}]}], 
+  "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.7740988903449564`*^9, 3.774098989212427*^9}, {
+  3.774099026324396*^9, 3.7740990290694065`*^9}, {3.774099067428793*^9, 
+  3.7740991890060005`*^9}, {3.7740992350948505`*^9, 3.774099320738243*^9}, {
+  3.774099360532626*^9, 3.774099597502327*^9}, {3.7742273879714484`*^9, 
+  3.774227439984032*^9}, {3.774227474102377*^9, 3.7742276032034388`*^9}, {
+  3.774227648332613*^9, 3.774227736566425*^9}, {3.7742277692159705`*^9, 
+  3.7742278075908995`*^9}},ExpressionUUID->"1cfc0a31-2742-49d2-830c-\
+ce85d4c99384"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`Body$$ = RGBColor[
+    1, 0, 0], $CellContext`Wheel$$ = RGBColor[
+    1, 1, 0], $CellContext`Window$$ = RGBColor[0, 0, 1], $CellContext`x$$ = 0,
+     Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`x$$], 0, "Position"}, 0, 10}, {{
+       Hold[$CellContext`Body$$], 
+       RGBColor[0, 0, 1], "Body"}, {
+       RGBColor[1, 1, 0], 
+       RGBColor[1, 0, 0], 
+       RGBColor[0, 1, 0]}}, {{
+       Hold[$CellContext`Wheel$$], 
+       RGBColor[1, 0, 0], "Wheel"}, {
+       RGBColor[1, 1, 0], 
+       RGBColor[1, 0, 0], 
+       RGBColor[0, 1, 0]}}, {{
+       Hold[$CellContext`Window$$], 
+       RGBColor[0, 0, 1], "Window"}, {
+       RGBColor[1, 1, 0], 
+       RGBColor[1, 0, 0], 
+       RGBColor[0, 1, 0]}}}, Typeset`size$$ = {360., {36., 42.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`x$138464$$ = 0, $CellContext`Body$138465$$ = 
+    0, $CellContext`Wheel$138466$$ = 0, $CellContext`Window$138467$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`Body$$ = 
+        RGBColor[0, 0, 1], $CellContext`Wheel$$ = 
+        RGBColor[1, 0, 0], $CellContext`Window$$ = 
+        RGBColor[0, 0, 1], $CellContext`x$$ = 0}, "ControllerVariables" :> {
+        Hold[$CellContext`x$$, $CellContext`x$138464$$, 0], 
+        Hold[$CellContext`Body$$, $CellContext`Body$138465$$, 0], 
+        Hold[$CellContext`Wheel$$, $CellContext`Wheel$138466$$, 0], 
+        Hold[$CellContext`Window$$, $CellContext`Window$138467$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Graphics[{{$CellContext`Body$$, 
+          
+          Polygon[{{$CellContext`x$$ + 0, 0.2}, {$CellContext`x$$ + 2, 
+             0.2}, {$CellContext`x$$ + 2, 1.2}, {$CellContext`x$$ + 0, 
+             1.2}}]}, {
+          
+          Polygon[{{$CellContext`x$$ + 0.25, 1.2}, {$CellContext`x$$ + 1.5, 
+             1.2}, {$CellContext`x$$ + 1.25, 2.2}, {$CellContext`x$$ + 0.5, 
+             2.2}}]}, {$CellContext`Window$$, 
+          
+          Polygon[{{$CellContext`x$$ + 0.35, 1.3}, {$CellContext`x$$ + 0.35, 
+             1.3}, {$CellContext`x$$ + 0.8, 2.1}, {$CellContext`x$$ + 0.55, 
+             2.1}}]}, {$CellContext`Window$$, 
+          
+          Polygon[{{$CellContext`x$$ + 0.9, 1.3}, {$CellContext`x$$ + 1.4, 
+             1.3}, {$CellContext`x$$ + 1.2, 2.1}, {$CellContext`x$$ + 0.9, 
+             2.1}}]}, {$CellContext`Wheel$$, 
+          Disk[{$CellContext`x$$ + 0.5, 0.2}, 0.2]}, {$CellContext`Wheel$$, 
+          Disk[{$CellContext`x$$ + 1.5, 0.2}, 0.2]}, {
+          Line[{{0, 0}, {12, 0}}]}}], 
+      "Specifications" :> {{{$CellContext`x$$, 0, "Position"}, 0, 
+         10}, {{$CellContext`Body$$, 
+          RGBColor[0, 0, 1], "Body"}, {
+          RGBColor[1, 1, 0], 
+          RGBColor[1, 0, 0], 
+          RGBColor[0, 1, 0]}}, {{$CellContext`Wheel$$, 
+          RGBColor[1, 0, 0], "Wheel"}, {
+          RGBColor[1, 1, 0], 
+          RGBColor[1, 0, 0], 
+          RGBColor[0, 1, 0]}}, {{$CellContext`Window$$, 
+          RGBColor[0, 0, 1], "Window"}, {
+          RGBColor[1, 1, 0], 
+          RGBColor[1, 0, 0], 
+          RGBColor[0, 1, 0]}}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{411., {114., 121.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.774227519404311*^9, 3.774227565703042*^9}, 
+   3.7742276061346135`*^9, 3.7742276616459675`*^9, 3.774227740189932*^9, {
+   3.774227786530974*^9, 
+   3.7742278103172245`*^9}},ExpressionUUID->"33cb07c0-9331-4d4e-911f-\
+ddac09cc6a55"]
+}, Open  ]]
+},
+WindowSize->{1366, 685},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"11.2 for Microsoft Windows (64-bit) (September 10, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 780, 21, 86, "Input",ExpressionUUID->"806b6df7-a53d-42ba-b9c1-13c7adb9b6b6"],
+Cell[1363, 45, 1823, 37, 336, "Output",ExpressionUUID->"bc62987e-0721-4595-bc0d-eb58daa84d44"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3223, 87, 4028, 112, 238, "Input",ExpressionUUID->"13cc9972-4d31-48f3-908f-f4333098f5fd"],
+Cell[7254, 201, 2604, 54, 190, "Output",ExpressionUUID->"f85677ea-c5a2-4d79-9f4b-f37c8628fdff"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9895, 260, 4960, 135, 295, "Input",ExpressionUUID->"1cfc0a31-2742-49d2-830c-ce85d4c99384"],
+Cell[14858, 397, 4340, 91, 254, "Output",ExpressionUUID->"33cb07c0-9331-4d4e-911f-ddac09cc6a55"]
+}, Open  ]]
+}
+]
+*)
+
